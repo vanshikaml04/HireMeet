@@ -166,9 +166,9 @@ export const CODING_QUESTIONS: CodeQuestion[] =[
       "-10^4 <= nums[i] <= 10^4"
     ]
   }
-  
+  // ... (10 more problems in the same format)
+]
 
-];
 
 export const LANGUAGES = [
   { id: "javascript", name: "JavaScript", icon: "/javascript.png" },
