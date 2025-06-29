@@ -60,113 +60,221 @@ export const QUICK_ACTIONS = [
 
 export const CODING_QUESTIONS: CodeQuestion[] =[
   {
-    "id": "two-sum",
-    "title": "Two Sum",
-    "description": "Given an array of integers `nums` and an integer `target`, return the indices of the two numbers such that they add up to the target...",
+    "id": "maximum-product-subarray",
+    "title": "Maximum Product Subarray",
+    "description": "Given an integer array `nums`, find the contiguous subarray within an array (containing at least one number) which has the largest product, and return the product.",
     "examples": [
       {
-        "input": "nums = [2, 7, 11, 15], target = 9",
-        "output": "[0, 1]",
-        "explanation": "nums[0] + nums[1] == 9"
-      }
-    ],
-    "starterCode": {
-      "javascript": "function twoSum(nums, target) {\n  // ...\n}",
-      "python": "def two_sum(nums, target):\n    # ...\n",
-      "java": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        // ...\n    }\n}"
-    },
-    "constraints": [
-      "2 <= nums.length <= 10^4",
-      "-10^9 <= nums[i], target <= 10^9",
-      "Exactly one valid answer."
-    ]
-  },
-  {
-    "id": "best-time-to-buy-and-sell-stock",
-    "title": "Best Time to Buy and Sell Stock",
-    "description": "You are given an array `prices` where `prices[i]` is the price of a given stock on the i‑th day. You want to maximize your profit by choosing a single day to buy one stock and a different day in the future to sell it...",
-    "examples": [
-      {
-        "input": "prices = [7,1,5,3,6,4]",
-        "output": "5",
-        "explanation": "Buy on day 2 (price=1) and sell on day 5 (price=6), profit = 5."
-      }
-    ],
-    "starterCode": {
-      "javascript": "function maxProfit(prices) {\n  // ...\n}",
-      "python": "def max_profit(prices):\n    # ...\n",
-      "java": "class Solution {\n    public int maxProfit(int[] prices) {\n        // ...\n    }\n}"
-    },
-    "constraints": [
-      "1 <= prices.length <= 10^5",
-      "0 <= prices[i] <= 10^4"
-    ]
-  },
-  {
-    "id": "contains-duplicate",
-    "title": "Contains Duplicate",
-    "description": "Given an integer array `nums`, return true if any value appears at least twice in the array, and false if every element is distinct.",
-    "examples": [
-      {
-        "input": "nums = [1,2,3,1]",
-        "output": "true",
-        "explanation": "1 appears twice."
-      }
-    ],
-    "starterCode": {
-      "javascript": "function containsDuplicate(nums) {\n  // ...\n}",
-      "python": "def contains_duplicate(nums):\n    # ...\n",
-      "java": "class Solution {\n    public boolean containsDuplicate(int[] nums) {\n        // ...\n    }\n}"
-    },
-    "constraints": [
-      "1 <= nums.length <= 10^5",
-      "-10^9 <= nums[i] <= 10^9"
-    ]
-  },
-  {
-    "id": "product-of-array-except-self",
-    "title": "Product of Array Except Self",
-    "description": "Given an integer array `nums`, return an output array `answer` such that `answer[i]` is equal to the product of all the elements of `nums` except `nums[i]`...",
-    "examples": [
-      {
-        "input": "nums = [1,2,3,4]",
-        "output": "[24,12,8,6]",
-        "explanation": "Products: [2*3*4, 1*3*4, 1*2*4, 1*2*3]."
-      }
-    ],
-    "starterCode": {
-      "javascript": "function productExceptSelf(nums) {\n  // ...\n}",
-      "python": "def product_except_self(nums):\n    # ...\n",
-      "java": "class Solution {\n    public int[] productExceptSelf(int[] nums) {\n        // ...\n    }\n}"
-    },
-    "constraints": [
-      "2 <= nums.length <= 10^5",
-      "-1000 <= nums[i] <= 1000",
-      "Product of output fits in a 32-bit integer."
-    ]
-  },
-  {
-    "id": "maximum-subarray",
-    "title": "Maximum Subarray",
-    "description": "Given an integer array `nums`, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.",
-    "examples": [
-      {
-        "input": "nums = [-2,1,-3,4,-1,2,1,-5,4]",
+        "input": "nums = [2,3,-2,4]",
         "output": "6",
-        "explanation": "Subarray [4,-1,2,1] has the largest sum = 6."
+        "explanation": "Subarray [2,3] has the largest product 6."
       }
     ],
     "starterCode": {
-      "javascript": "function maxSubArray(nums) {\n  // ...\n}",
-      "python": "def max_sub_array(nums):\n    # ...\n",
-      "java": "class Solution {\n    public int maxSubArray(int[] nums) {\n        // ...\n    }\n}"
+      "javascript": "function maxProduct(nums) {\n  // ...\n}",
+      "python": "def max_product(nums):\n    # ...\n",
+      "java": "class Solution {\n    public int maxProduct(int[] nums) {\n        // ...\n    }\n}"
+    },
+    "constraints": [
+      "1 <= nums.length <= 2 * 10^4",
+      "-10 <= nums[i] <= 10"
+    ]
+  },
+  {
+    "id": "find-minimum-in-rotated-sorted-array",
+    "title": "Find Minimum in Rotated Sorted Array",
+    "description": "Suppose an array of length `n` sorted in ascending order is rotated between 1 and n times. Find the minimum element. You must write an algorithm that runs in O(log n) time.",
+    "examples": [
+      {
+        "input": "nums = [3,4,5,1,2]",
+        "output": "1",
+        "explanation": "The smallest value is 1."
+      }
+    ],
+    "starterCode": {
+      "javascript": "function findMin(nums) {\n  // ...\n}",
+      "python": "def find_min(nums):\n    # ...\n",
+      "java": "class Solution {\n    public int findMin(int[] nums) {\n        // ...\n    }\n}"
+    },
+    "constraints": [
+      "1 <= nums.length <= 5000",
+      "-5000 <= nums[i] <= 5000",
+      "All elements are unique",
+      "nums is rotated"
+    ]
+  },
+  {
+    "id": "search-in-rotated-sorted-array",
+    "title": "Search in Rotated Sorted Array",
+    "description": "Given the array `nums` after rotation and an integer `target`, return the index of `target` if it is in `nums`, or -1 if it is not. You must write an algorithm with O(log n) runtime complexity.",
+    "examples": [
+      {
+        "input": "nums = [4,5,6,7,0,1,2], target = 0",
+        "output": "4",
+        "explanation": "Element 0 is at index 4."
+      }
+    ],
+    "starterCode": {
+      "javascript": "function search(nums, target) {\n  // ...\n}",
+      "python": "def search(nums, target):\n    # ...\n",
+      "java": "class Solution {\n    public int search(int[] nums, int target) {\n        // ...\n    }\n}"
+    },
+    "constraints": [
+      "1 <= nums.length <= 5000",
+      "-10^4 <= nums[i] <= 10^4",
+      "All values are unique",
+      "nums is rotated"
+    ]
+  },
+  {
+    "id": "three-sum",
+    "title": "3Sum",
+    "description": "Given an integer array `nums`, return all the triplets `[nums[i], nums[j], nums[k]]` such that `i != j != k`, and `nums[i] + nums[j] + nums[k] == 0`.",
+    "examples": [
+      {
+        "input": "nums = [-1,0,1,2,-1,-4]",
+        "output": "[[-1,-1,2],[-1,0,1]]",
+        "explanation": "These are the unique triplets that sum to 0."
+      }
+    ],
+    "starterCode": {
+      "javascript": "function threeSum(nums) {\n  // ...\n}",
+      "python": "def three_sum(nums):\n    # ...\n",
+      "java": "class Solution {\n    public List<List<Integer>> threeSum(int[] nums) {\n        // ...\n    }\n}"
+    },
+    "constraints": [
+      "3 <= nums.length <= 3000",
+      "-10^5 <= nums[i] <= 10^5"
+    ]
+  },
+  {
+    "id": "container-with-most-water",
+    "title": "Container With Most Water",
+    "description": "You are given an integer array `height` of length `n`. There are `n` vertical lines such that the two endpoints of the ith line are `(i, 0)` and `(i, height[i])`. Find two lines that together with the x-axis form a container that holds the most water.",
+    "examples": [
+      {
+        "input": "height = [1,8,6,2,5,4,8,3,7]",
+        "output": "49",
+        "explanation": "Max area between lines at index 1 and 8."
+      }
+    ],
+    "starterCode": {
+      "javascript": "function maxArea(height) {\n  // ...\n}",
+      "python": "def max_area(height):\n    # ...\n",
+      "java": "class Solution {\n    public int maxArea(int[] height) {\n        // ...\n    }\n}"
+    },
+    "constraints": [
+      "2 <= height.length <= 10^5",
+      "0 <= height[i] <= 10^4"
+    ]
+  },
+  {
+    "id": "valid-parentheses",
+    "title": "Valid Parentheses",
+    "description": "Given a string `s` containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. A string is valid if open brackets are closed in the correct order.",
+    "examples": [
+      {
+        "input": "s = \"()[]{}\"",
+        "output": "true",
+        "explanation": "Each type of bracket is correctly closed."
+      }
+    ],
+    "starterCode": {
+      "javascript": "function isValid(s) {\n  // ...\n}",
+      "python": "def is_valid(s):\n    # ...\n",
+      "java": "class Solution {\n    public boolean isValid(String s) {\n        // ...\n    }\n}"
+    },
+    "constraints": [
+      "1 <= s.length <= 10^4",
+      "s consists only of '()[]{}'"
+    ]
+  },
+  {
+    "id": "merge-intervals",
+    "title": "Merge Intervals",
+    "description": "Given an array of intervals where `intervals[i] = [start_i, end_i]`, merge all overlapping intervals and return an array of the non-overlapping intervals that cover all the intervals in the input.",
+    "examples": [
+      {
+        "input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
+        "output": "[[1,6],[8,10],[15,18]]",
+        "explanation": "Overlapping intervals [1,3] and [2,6] merged into [1,6]."
+      }
+    ],
+    "starterCode": {
+      "javascript": "function merge(intervals) {\n  // ...\n}",
+      "python": "def merge(intervals):\n    # ...\n",
+      "java": "class Solution {\n    public int[][] merge(int[][] intervals) {\n        // ...\n    }\n}"
+    },
+    "constraints": [
+      "1 <= intervals.length <= 10^4",
+      "intervals[i].length == 2",
+      "0 <= start_i <= end_i <= 10^4"
+    ]
+  },
+  {
+    "id": "insert-interval",
+    "title": "Insert Interval",
+    "description": "Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary).",
+    "examples": [
+      {
+        "input": "intervals = [[1,3],[6,9]], newInterval = [2,5]",
+        "output": "[[1,5],[6,9]]",
+        "explanation": "Interval [2,5] overlaps with [1,3] to become [1,5]."
+      }
+    ],
+    "starterCode": {
+      "javascript": "function insert(intervals, newInterval) {\n  // ...\n}",
+      "python": "def insert(intervals, new_interval):\n    # ...\n",
+      "java": "class Solution {\n    public int[][] insert(int[][] intervals, int[] newInterval) {\n        // ...\n    }\n}"
+    },
+    "constraints": [
+      "0 <= intervals.length <= 10^4",
+      "intervals[i].length == 2",
+      "0 <= start_i <= end_i <= 10^4"
+    ]
+  },
+  {
+    "id": "group-anagrams",
+    "title": "Group Anagrams",
+    "description": "Given an array of strings `strs`, group the anagrams together. You can return the answer in any order.",
+    "examples": [
+      {
+        "input": "strs = [\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+        "output": "[[\"eat\",\"tea\",\"ate\"],[\"tan\",\"nat\"],[\"bat\"]]",
+        "explanation": "Anagrams are grouped together."
+      }
+    ],
+    "starterCode": {
+      "javascript": "function groupAnagrams(strs) {\n  // ...\n}",
+      "python": "def group_anagrams(strs):\n    # ...\n",
+      "java": "class Solution {\n    public List<List<String>> groupAnagrams(String[] strs) {\n        // ...\n    }\n}"
+    },
+    "constraints": [
+      "1 <= strs.length <= 10^4",
+      "0 <= strs[i].length <= 100"
+    ]
+  },
+  {
+    "id": "top-k-frequent-elements",
+    "title": "Top K Frequent Elements",
+    "description": "Given a non-empty array of integers, return the `k` most frequent elements.",
+    "examples": [
+      {
+        "input": "nums = [1,1,1,2,2,3], k = 2",
+        "output": "[1,2]",
+        "explanation": "1 appears 3 times, 2 appears 2 times."
+      }
+    ],
+    "starterCode": {
+      "javascript": "function topKFrequent(nums, k) {\n  // ...\n}",
+      "python": "def top_k_frequent(nums, k):\n    # ...\n",
+      "java": "class Solution {\n    public int[] topKFrequent(int[] nums, int k) {\n        // ...\n    }\n}"
     },
     "constraints": [
       "1 <= nums.length <= 10^5",
-      "-10^4 <= nums[i] <= 10^4"
+      "k is in the range [1, number of unique elements]"
     ]
   }
-  // ... (10 more problems in the same format)
 ]
 
 
