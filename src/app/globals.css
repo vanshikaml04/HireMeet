@@ -2,26 +2,104 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* === Brand Colors (Light Mode) === */
+    --background: 0 0% 100%;
+    --foreground: 224 71.4% 4.1%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+
+    --primary: 24 94% 50%;
+    /* Vibrant Orange */
+    --primary-hover: 24 94% 45%;
+    /* Darker on hover */
+    --primary-foreground: 210 20% 98%;
+    /* Text on primary */
+
+    --secondary: 36 100% 94%;
+    /* Soft peach */
+    --secondary-foreground: 30 100% 20%;
+
+    --muted: 36 100% 94%;
+    --muted-foreground: 30 8.9% 46.1%;
+
+    --accent: 36 100% 94%;
+    --accent-foreground: 30 100% 20%;
+
+    --destructive: 0 70% 50%;
+    /* Brighter red for alerts */
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 36 80% 90%;
+    --input: 36 80% 90%;
+    --ring: 24 94% 50%;
+    --ring-hover: 24 94% 45%;
+
+    --radius: 0.65rem;
+
+    /* === Brand Gradient === */
+    --gradient-primary: linear-gradient(to right, hsl(24 94% 50%), hsl(10 90% 55%));
+
+    /* === Chart Colors === */
+    --chart-1: 24 94% 50%;
+    --chart-2: 14 85% 55%;
+    --chart-3: 36 100% 65%;
+    --chart-4: 8 100% 70%;
+    --chart-5: 40 100% 60%;
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  .dark {
+    /* === Brand Colors (Dark Mode) === */
+    --background: 24 10% 8%;
+    --foreground: 30 100% 96%;
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+    --card: 24 10% 8%;
+    --card-foreground: 30 100% 96%;
+
+    --popover: 24 10% 8%;
+    --popover-foreground: 30 100% 96%;
+
+    --primary: 30 100% 55%;
+    --primary-hover: 30 100% 50%;
+    --primary-foreground: 210 20% 98%;
+
+    --secondary: 20 15% 25%;
+    --secondary-foreground: 30 100% 95%;
+
+    --muted: 20 15% 25%;
+    --muted-foreground: 30 20% 70%;
+
+    --accent: 20 15% 25%;
+    --accent-foreground: 30 100% 95%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 20 15% 25%;
+    --input: 20 15% 25%;
+    --ring: 30 100% 55%;
+    --ring-hover: 30 100% 50%;
+
+    --gradient-primary: linear-gradient(to right, hsl(30 100% 55%), hsl(12 80% 60%));
+
+    --chart-1: 24 100% 60%;
+    --chart-2: 14 85% 50%;
+    --chart-3: 8 85% 45%;
+    --chart-4: 36 100% 60%;
+    --chart-5: 42 100% 65%;
+  }
+
+  /* Apply theme tokens */
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
   }
 }
